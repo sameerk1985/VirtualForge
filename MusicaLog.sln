@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicaLog.Web", "MusicaLog.Web\MusicaLog.Web.csproj", "{FBF73310-4426-45D1-BA7C-155022EF9A5A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44014826-6AE9-4F77-8CFE-E4A5B9218768} = {44014826-6AE9-4F77-8CFE-E4A5B9218768}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicaLog.WCF", "MusicaLog.WCF\MusicaLog.WCF.csproj", "{44014826-6AE9-4F77-8CFE-E4A5B9218768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicaLog.DAL", "MusicaLog.DAL\MusicaLog.DAL.csproj", "{171C01E1-52B1-43B9-A86B-4E011FF0A783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicaLog.Common", "MusicaLog.Common\MusicaLog.Common.csproj", "{AD622BFE-207C-46BA-A674-AB137B4726A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBF73310-4426-45D1-BA7C-155022EF9A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF73310-4426-45D1-BA7C-155022EF9A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF73310-4426-45D1-BA7C-155022EF9A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF73310-4426-45D1-BA7C-155022EF9A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44014826-6AE9-4F77-8CFE-E4A5B9218768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44014826-6AE9-4F77-8CFE-E4A5B9218768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44014826-6AE9-4F77-8CFE-E4A5B9218768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44014826-6AE9-4F77-8CFE-E4A5B9218768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{171C01E1-52B1-43B9-A86B-4E011FF0A783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171C01E1-52B1-43B9-A86B-4E011FF0A783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171C01E1-52B1-43B9-A86B-4E011FF0A783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171C01E1-52B1-43B9-A86B-4E011FF0A783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD622BFE-207C-46BA-A674-AB137B4726A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD622BFE-207C-46BA-A674-AB137B4726A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD622BFE-207C-46BA-A674-AB137B4726A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD622BFE-207C-46BA-A674-AB137B4726A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {778931C6-2723-457F-BEEE-01890A592EAF}
+	EndGlobalSection
+EndGlobal

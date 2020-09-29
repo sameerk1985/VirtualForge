@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dc5b7d4c-980e-42ce-91af-7f1c2f2599e6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:54010/MusicaLogService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MusicaLogService.xsd" MetadataType="Schema" ID="e33c09a9-0903-4f03-a9dd-861274bfb5b0" SourceId="1" SourceUrl="http://localhost:54010/MusicaLogService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MusicaLogService.wsdl" MetadataType="Wsdl" ID="2e46a3d1-0bb6-4123-ad42-6529e6d9ab87" SourceId="1" SourceUrl="http://localhost:54010/MusicaLogService.svc?wsdl" />
+    <MetadataFile FileName="MusicaLogService1.xsd" MetadataType="Schema" ID="bb793cec-c803-47e1-b8ab-6682272c8861" SourceId="1" SourceUrl="http://localhost:54010/MusicaLogService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MusicaLogService2.xsd" MetadataType="Schema" ID="ed058077-b07f-4cb2-9dbb-b4511cc6a16d" SourceId="1" SourceUrl="http://localhost:54010/MusicaLogService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MusicaLogService.disco" MetadataType="Disco" ID="7e841dca-c39d-4941-b9e4-77a89f70cc7f" SourceId="1" SourceUrl="http://localhost:54010/MusicaLogService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

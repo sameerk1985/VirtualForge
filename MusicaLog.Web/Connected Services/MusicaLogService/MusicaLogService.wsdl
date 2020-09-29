@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MusicaLogService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54010/MusicaLogService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54010/MusicaLogService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54010/MusicaLogService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MusicaLog.Common.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMusicaLogService_GetMusicaLogs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMusicaLogs" />
+  </wsdl:message>
+  <wsdl:message name="IMusicaLogService_GetMusicaLogs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMusicaLogsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMusicaLogService_GetMusicaLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMusicaLog" />
+  </wsdl:message>
+  <wsdl:message name="IMusicaLogService_GetMusicaLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMusicaLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMusicaLogService_AddMusicaLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMusicaLog" />
+  </wsdl:message>
+  <wsdl:message name="IMusicaLogService_AddMusicaLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMusicaLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMusicaLogService_UpdateMusicaLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMusicaLog" />
+  </wsdl:message>
+  <wsdl:message name="IMusicaLogService_UpdateMusicaLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMusicaLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMusicaLogService_DeleteMusicaLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMusicaLog" />
+  </wsdl:message>
+  <wsdl:message name="IMusicaLogService_DeleteMusicaLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMusicaLogResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMusicaLogService">
+    <wsdl:operation name="GetMusicaLogs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMusicaLogService/GetMusicaLogs" message="tns:IMusicaLogService_GetMusicaLogs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMusicaLogService/GetMusicaLogsResponse" message="tns:IMusicaLogService_GetMusicaLogs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMusicaLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMusicaLogService/GetMusicaLog" message="tns:IMusicaLogService_GetMusicaLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMusicaLogService/GetMusicaLogResponse" message="tns:IMusicaLogService_GetMusicaLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMusicaLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMusicaLogService/AddMusicaLog" message="tns:IMusicaLogService_AddMusicaLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMusicaLogService/AddMusicaLogResponse" message="tns:IMusicaLogService_AddMusicaLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMusicaLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMusicaLogService/UpdateMusicaLog" message="tns:IMusicaLogService_UpdateMusicaLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMusicaLogService/UpdateMusicaLogResponse" message="tns:IMusicaLogService_UpdateMusicaLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMusicaLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMusicaLogService/DeleteMusicaLog" message="tns:IMusicaLogService_DeleteMusicaLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMusicaLogService/DeleteMusicaLogResponse" message="tns:IMusicaLogService_DeleteMusicaLog_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMusicaLogService" type="tns:IMusicaLogService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMusicaLogs">
+      <soap:operation soapAction="http://tempuri.org/IMusicaLogService/GetMusicaLogs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMusicaLog">
+      <soap:operation soapAction="http://tempuri.org/IMusicaLogService/GetMusicaLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMusicaLog">
+      <soap:operation soapAction="http://tempuri.org/IMusicaLogService/AddMusicaLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMusicaLog">
+      <soap:operation soapAction="http://tempuri.org/IMusicaLogService/UpdateMusicaLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMusicaLog">
+      <soap:operation soapAction="http://tempuri.org/IMusicaLogService/DeleteMusicaLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MusicaLogService">
+    <wsdl:port name="BasicHttpBinding_IMusicaLogService" binding="tns:BasicHttpBinding_IMusicaLogService">
+      <soap:address location="http://localhost:54010/MusicaLogService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
